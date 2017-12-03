@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Coffee Time</string>
+    <string name="header">Coffee Time</string>
+    <string name="quantity_default">1</string>
+    <string name="toppings">Toppings</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="total_price">Total Price</string>
+    <string name="price_field">3€</string>
+    <string name="order_button">✓</string>
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+    <string name="default_summary">Cups of coffee: 1 \nWhipped cream: No\nChocolate: No</string>
+
+    <string name="description_background">Background of app portrait view</string>
+    <string name="description_increment_button">Increments quantity</string>
+    <string name="description_decrement_button">Decrements quantity</string>
+
+    <string name="hundred_message">You cannot order more than 100 coffees.</string>
+    <string name="one_message">You cannot order less than one coffee.</string>
+    <string name="currency_sign">€</string>
+
+    <string name="quantity_summary">Cups of coffee: \u0020</string>
+    <string name="whipped_cream_summary">\nWhipped cream: \u0020</string>
+    <string name="chocolate_summary">\nChocolate: \u0020</string>
+    <string name="status_yes">Yes</string>
+    <string name="status_no">No</string>
+    <string name="thank_you">\n\nThank you for Your purchase!\n\nCoffee Time team.</string>
+    <string name="price">\nPrice: \u0020</string>
+    <string name="email_subject">Your Coffee Time Order</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title">125sp</dimen>
+    <dimen name="sub_titles">20sp</dimen>
+    <dimen name="body_text">16sp</dimen>
+
+    <dimen name="title_land">80sp</dimen>
+    <dimen name="sub_titles_land">12sp</dimen>
+    <dimen name="body_text_land">10sp</dimen>
+</resources>
