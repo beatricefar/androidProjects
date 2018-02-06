@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#832d50">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:text="Congratulations!"
+        android:fontFamily="@font/header"
+        android:textSize="28sp"
+        android:gravity="bottom"
+        android:textColor="#A7D163"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="You've got: "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="bottom"
+        android:fontFamily="@font/body_bold"/>
+    <TextView
+        android:id="@+id/score_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textSize="30dp"
+        android:text="10 / 10"
+        android:textColor="#FFE500"
+        android:fontFamily="@font/header"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:text="questions right."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="top"
+        android:fontFamily="@font/body_bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:textSize="20sp"
+        android:fontFamily="@font/body_bold"
+        android:textColor="#FFFFFF"
+        android:text="Want to become a pro at this?"/>
+
+    <TextView
+        android:id="@+id/try_again_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:fontFamily="@font/header"
+        android:text=">> Try again"
+        android:textColor="#FFE500"/>
+
+
+</LinearLayout>

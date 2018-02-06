@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#832d50">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:paddingTop="40dp">
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5"
+            android:fontFamily="@font/header"
+            android:gravity="top|left"
+            android:text="Is Lithuania part of Baltic states?"
+            android:textColor="#A7D163"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/answer_state_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/body_bold"
+            android:text="Wrong!"
+            android:textColor="#FF6F6F"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/answer_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+
+            android:layout_weight="1.2"
+            android:fontFamily="@font/body_regular"
+            android:text="Text"
+            android:textColor="#FFFFFF"
+
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.4">
+
+            <Button
+                android:id="@+id/button_false"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/false_button"
+                android:paddingBottom="14dp"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:paddingTop="14dp"
+                android:text="False"
+                android:fontFamily="@font/body_bold"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/button_true"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/button_false"
+                android:background="@drawable/true_button"
+                android:paddingBottom="14dp"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:paddingTop="14dp"
+                android:text="True"
+                android:fontFamily="@font/body_bold"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="50dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="0.7"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/header"
+            android:gravity="bottom|right"
+            android:text=">> next question"
+            android:textColor="#FFE500"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</RelativeLayout>
