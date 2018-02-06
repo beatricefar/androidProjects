@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">HP Quiz</string>
+    <string name="description_text">Welcome to Harry Potter quiz. Scroll down to begin this magical journey.</string>
+
+    <string name="name_q">Enter your wizzard name:</string>
+    <string name="name_input_explanation">Type your wizzard name here.</string>
+
+    <string name="quiz_q_1">Who is the author of Harry Potter?</string>
+    <string name="quiz_q_1_a">J.K. Rowling</string>
+    <string name="quiz_q_1_b">J. R. R. Tolkien</string>
+    <string name="quiz_q_1_c">George R. R. Martin</string>
+
+    <string name="quiz_q_2">Which of the following Harry Potter books do exist?</string>
+    <string name="quiz_q_2_a">Harry Potter and the Horcruxes</string>
+    <string name="quiz_q_2_b">Harry Potter and the Deathly Hallows</string>
+    <string name="quiz_q_2_c">Harry Potter and the Order of the Azkaban</string>
+    <string name="quiz_q_2_d">Harry Potter and the Philosopher’s Stone</string>
+
+    <string name="quiz_q_3">Harry Potter father’s name is:</string>
+    <string name="quiz_q_3_a">Sirius</string>
+    <string name="quiz_q_3_b">Remus</string>
+    <string name="quiz_q_3_c">James</string>
+
+    <string name="quiz_q_4">Which of the four Houses of Hogwarts Harry belonged to?</string>
+    <string name="quiz_q_4_a">Hufflepuff</string>
+    <string name="quiz_q_4_b">Gryffindor</string>
+    <string name="quiz_q_4_c">Ravenclaw</string>
+    <string name="quiz_q_4_d">Slytherin</string>
+
+    <string name="quiz_q_5">Sirius Black was Harry’s:</string>
+    <string name="quiz_q_5_a">Best friend</string>
+    <string name="quiz_q_5_b">Enemy</string>
+    <string name="quiz_q_5_c">Godfather</string>
+
+    <string name="quiz_q_6">Which of these items is not a Dealthly Hallow:</string>
+    <string name="quiz_q_6_a">Elder Wand</string>
+    <string name="quiz_q_6_b">Resurrection Stone</string>
+    <string name="quiz_q_6_c">Unnoticeable Cloak</string>
+
+    <string name="quiz_q_7">Who is a Half-Blood Prince?</string>
+    <string name="quiz_q_7_a">Harry Potter</string>
+    <string name="quiz_q_7_b">Sirius Black</string>
+    <string name="quiz_q_7_c">Severus Snape</string>
+
+    <string name="logo_view_description">This is the logo of quiz.</string>
+
+    <string name="quiz_q_no_0">0</string>
+    <string name="quiz_q_no_1">1</string>
+    <string name="quiz_q_no_2">2</string>
+    <string name="quiz_q_no_3">3</string>
+    <string name="quiz_q_no_4">4</string>
+    <string name="quiz_q_no_5">5</string>
+    <string name="quiz_q_no_6">6</string>
+    <string name="quiz_q_no_7">7</string>
+
+    <string name="your_score">Your score:</string>
+    <string name="default_score">0/7</string>
+    <string name="default_score_message">Congratulations Wizzard, you have got 7/7 questions right!</string>
+
+    <string name="button_reset">Reset</string>
+    <string name="button_show_results">Show Results</string>
+
+</resources>

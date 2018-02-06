@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#450400</color>
+    <color name="colorAccent">#BD2F4C</color>
+    <color name="background">#455476</color>
+    <color name="checkboxes">#6E545F</color>
+    <color name="introductionText">#ECECEC</color>
+    <color name="bgCard">#FFE7D9</color>
+    <color name="cardText">#6E545F</color>
+    <color name="score">#F8CF00</color>
+    <color name="buttonResultPressed">#F6E9A8</color>
+    <color name="buttonResetPressed">#EBA687</color>
+    <color name="buttonResetNormal">#EB7B4A</color>
+
+</resources>
