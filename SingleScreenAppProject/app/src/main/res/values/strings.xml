@@ -1,0 +1,18 @@
+<resources>
+    <!--App components-->
+    <string name="app_name">Sidabrinė Linija</string>
+    <string name="website">www.sidabrinelinija.lt</string>
+    <string name="phoneNumber">8 800 800 20</string>
+    <string name="email">pasikalbekime@sidabrinelinija.lt</string>
+    <string name="description">Help a lonely elder by spending 15 minutes of your time each week. Be their friend via phone and make a difference.</string>
+    <string name="encouragement">Join us .</string>
+    <string name="phoneNumberLt">880080020</string>
+    <string name="emailSubject">Aš noriu savanoriauti.</string>
+    <string name="webpageLt">http://www.sidabrinelinija.lt/</string>
+
+    <!--Content descriptions-->
+    <string name="logoContentDescription">Silver Line logo.</string>
+    <string name="emailIconContentDescription">Email icon.</string>
+    <string name="websiteIconContentDescription">Website icon.</string>
+    <string name="phoneContentDescription">Mobile phone icon.</string>
+</resources>

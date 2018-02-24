@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">16sp</dimen>
+    <dimen name="descriptionLineSpacing">-2sp</dimen>
+    <dimen name="iconMarginEnd">16dp</dimen>
+    <dimen name="iconMarginTopBottom">5dp</dimen>
+    <dimen name="padding">30dp</dimen>
+    <dimen name="appItemsMargin">30dp</dimen>
+    <dimen name="separatorWidth">3dp</dimen>
+    <dimen name="iconWidth">40dp</dimen>
+    <dimen name="logoPaddingTop">50dp</dimen>
+    <dimen name="descriptionPaddingTop">15dp</dimen>
+</resources>

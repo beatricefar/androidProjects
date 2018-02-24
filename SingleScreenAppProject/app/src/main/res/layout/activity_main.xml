@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beatricefarias.singlescreenappproject.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/Logo"
+                android:contentDescription="@string/logoContentDescription"
+                android:src="@drawable/ic_logo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separatorWidth"
+                android:layout_marginEnd="@dimen/appItemsMargin"
+                android:layout_marginStart="@dimen/appItemsMargin"
+                android:background="@android:color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/appItemsMargin"
+            android:layout_marginStart="@dimen/appItemsMargin"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Description"
+                android:text="@string/description" />
+
+            <TextView
+                style="@style/JoinUs"
+                android:text="@string/encouragement" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:columnCount="2"
+                android:rowCount="3">
+
+                <ImageView
+                    style="@style/Icon"
+                    android:contentDescription="@string/phoneContentDescription"
+                    android:src="@drawable/ic_phone_android_black_24dp" />
+
+                <TextView
+                    android:id="@+id/phoneNumber"
+                    style="@style/Information"
+                    android:text="@string/phoneNumber" />
+
+                <ImageView
+                    style="@style/Icon"
+                    android:contentDescription="@string/emailIconContentDescription"
+                    android:src="@drawable/ic_email_black_24dp" />
+
+                <TextView
+                    android:id="@+id/email"
+                    style="@style/Information"
+                    android:text="@string/email" />
+
+                <ImageView
+                    style="@style/Icon"
+                    android:contentDescription="@string/websiteIconContentDescription"
+                    android:src="@drawable/ic_language_black_24dp" />
+
+                <TextView
+                    android:id="@+id/website"
+                    style="@style/Information"
+                    android:text="@string/website" />
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
