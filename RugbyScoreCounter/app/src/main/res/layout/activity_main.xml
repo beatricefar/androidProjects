@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beatricefarias.rugbyscorecounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--Logo and separators-->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/rugby_logo" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="4dp"
+            android:background="#000000" />
+
+        <!--Scores-->
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="5">
+
+            <TextView
+                android:id="@+id/score_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/score_visitors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:text="· HOME ·"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:text="· VISITORS ·"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!--Try buttons and description-->
+
+            <Button
+                style="@style/LeftButton"
+                android:onClick="tryHome" />
+
+            <TextView
+                style="@style/PointInformation"
+                android:text="Try" />
+
+            <Button
+                style="@style/RightButton"
+                android:onClick="tryVisitors" />
+
+            <!--Goal Kick buttons and description-->
+
+            <Button
+                style="@style/LeftButton"
+                android:onClick="goalKickHome" />
+
+            <TextView
+                style="@style/PointInformation"
+                android:text="Goal Kick" />
+
+            <Button
+                style="@style/RightButton"
+                android:onClick="goalKickVisitors" />
+
+            <!--Penalty buttons and description-->
+
+            <Button
+                style="@style/LeftButton"
+                android:onClick="penaltyHome" />
+
+            <TextView
+                style="@style/PointInformation"
+                android:text="Penalty" />
+
+            <Button
+                style="@style/RightButton"
+                android:onClick="penaltyVisitors" />
+
+            <!--Drop Goal buttons and description-->
+
+            <Button
+                style="@style/LeftButton"
+                android:onClick="dropGoalHome" />
+
+            <TextView
+                style="@style/PointInformation"
+                android:text="Drop Goal" />
+
+            <Button
+                style="@style/RightButton"
+                android:onClick="dropGoalVisitors" />
+
+        </GridLayout>
+
+        <!--New game button at the bottom-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:background="#000000"
+                android:onClick="reset"
+                android:text="·    New Game   ·"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
