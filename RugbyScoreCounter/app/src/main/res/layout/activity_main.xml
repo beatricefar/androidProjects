@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,21 +9,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <!--Logo and separators-->
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center_horizontal"
+            style="@style/Logo"
+            android:contentDescription="@string/logoContentDescription"
             android:src="@drawable/rugby_logo" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="3dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="4dp"
-            android:background="#000000" />
-
-        <!--Scores-->
+        <View style="@style/Divider" />
 
         <GridLayout
             android:layout_width="match_parent"
@@ -32,106 +24,75 @@
             android:columnCount="3"
             android:rowCount="5">
 
+            <!--Scores-->
             <TextView
                 android:id="@+id/score_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="50sp" />
+                style="@style/Score" />
 
-
-            <android.support.v4.widget.Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1" />
+            <android.support.v4.widget.Space style="@style/BlankSpace" />
 
             <TextView
                 android:id="@+id/score_visitors"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="50sp" />
+                style="@style/Score" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:gravity="center_horizontal"
-                android:text="· HOME ·"
-                android:textColor="#000000"
-                android:textSize="16sp" />
+                style="@style/Team"
+                android:text="@string/teamAName" />
 
-            <android.support.v4.widget.Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1" />
+            <android.support.v4.widget.Space style="@style/BlankSpace" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:gravity="center_horizontal"
-                android:text="· VISITORS ·"
-                android:textColor="#000000"
-                android:textSize="16sp" />
+                style="@style/Team"
+                android:text="@string/teamBName" />
 
-            <!--Try buttons and description-->
-
+            <!--Buttons and descriptions-->
+            <!--Try row-->
             <Button
                 style="@style/LeftButton"
                 android:onClick="tryHome" />
 
             <TextView
                 style="@style/PointInformation"
-                android:text="Try" />
+                android:text="@string/tryPointDescription" />
 
             <Button
                 style="@style/RightButton"
                 android:onClick="tryVisitors" />
 
-            <!--Goal Kick buttons and description-->
-
+            <!--Goal Kick row-->
             <Button
                 style="@style/LeftButton"
                 android:onClick="goalKickHome" />
 
             <TextView
                 style="@style/PointInformation"
-                android:text="Goal Kick" />
+                android:text="@string/goalKickPointDescription" />
 
             <Button
                 style="@style/RightButton"
                 android:onClick="goalKickVisitors" />
 
-            <!--Penalty buttons and description-->
-
+            <!--Penalty row-->
             <Button
                 style="@style/LeftButton"
                 android:onClick="penaltyHome" />
 
             <TextView
                 style="@style/PointInformation"
-                android:text="Penalty" />
+                android:text="@string/penaltyPointDescription" />
 
             <Button
                 style="@style/RightButton"
                 android:onClick="penaltyVisitors" />
 
-            <!--Drop Goal buttons and description-->
-
+            <!--Drop Goal row-->
             <Button
                 style="@style/LeftButton"
                 android:onClick="dropGoalHome" />
 
             <TextView
                 style="@style/PointInformation"
-                android:text="Drop Goal" />
+                android:text="@string/dropGoalDescription" />
 
             <Button
                 style="@style/RightButton"
@@ -139,33 +100,17 @@
 
         </GridLayout>
 
-        <!--New game button at the bottom-->
-
+        <!--New game button-->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom">
+            android:layout_height="match_parent">
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="20dp"
-                android:layout_marginTop="10dp"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp"
-                android:background="#000000"
-                android:onClick="reset"
-                android:text="·    New Game   ·"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+                style="@style/ResetButton"
+                android:onClick="reset" />
 
         </RelativeLayout>
 
     </LinearLayout>
 
 </ScrollView>
-
-
-

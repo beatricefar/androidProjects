@@ -8,44 +8,91 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--Layout of application styles-->
     <style name="LeftButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_columnWeight">@dimen/columnWeight</item>
         <item name="android:background">@android:color/transparent</item>
-        <item name="android:text">+</item>
-        <item name="android:textColor">#BF360C</item>
-        <item name="android:textSize">40sp</item>
+        <item name="android:text">@string/addScoreButtons</item>
+        <item name="android:textColor">@color/buttonColor</item>
+        <item name="android:textSize">@dimen/buttonTextSize</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="RightButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_columnWeight">@dimen/columnWeight</item>
         <item name="android:background">@android:color/transparent</item>
-        <item name="android:text">+</item>
-        <item name="android:textColor">#BF360C</item>
-        <item name="android:textSize">40sp</item>
+        <item name="android:text">@string/addScoreButtons</item>
+        <item name="android:textColor">@color/buttonColor</item>
+        <item name="android:textSize">@dimen/buttonTextSize</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="PointInformation">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_columnWeight">@dimen/columnWeight</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:textColor">#000000</item>
-        <item name="android:textSize">16sp</item>
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_columnWeight="1"-->
-        <!--android:layout_gravity="center_vertical"-->
-        <!--android:gravity="center_horizontal"-->
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/pointInformation</item>
+    </style>
 
-        <!--android:textColor="#000000"-->
-        <!--android:textSize="16sp"-->
+    <style name="Logo">
+        <item name="android:layout_width">@dimen/logoSize</item>
+        <item name="android:layout_height">@dimen/logoSize</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/dividerThickness</item>
+        <item name="android:layout_marginBottom">@dimen/dividerMarginBottom</item>
+        <item name="android:layout_marginTop">@dimen/dividerMarginTop</item>
+        <item name="android:background">@color/separatorColor</item>
+    </style>
+
+    <style name="BlankSpace">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">@dimen/columnWeight</item>
+    </style>
+
+    <style name="Team">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">@dimen/columnWeight</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/teamTextSize</item>
+    </style>
+
+    <style name="Score">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">@dimen/columnWeight</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/scoreTextSize</item>
+        <item name="android:text">@string/defaultScore</item>
+    </style>
+
+    <style name="ResetButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">@dimen/resetMarginBottom</item>
+        <item name="android:layout_marginTop">@dimen/resetMarginTop</item>
+        <item name="android:paddingBottom">@dimen/resetButtonPadding</item>
+        <item name="android:paddingTop">@dimen/resetButtonPadding</item>
+        <item name="android:background">@color/resetButton</item>
+        <item name="android:text">@string/resetButtonName</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/buttonTextColor</item>
+        <item name="android:textSize">@dimen/resetButtonText</item>
     </style>
 
 </resources>

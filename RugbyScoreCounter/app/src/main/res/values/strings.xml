@@ -1,3 +1,16 @@
 <resources>
+    <!--App definitions-->
     <string name="app_name">Rugby Count</string>
+
+    <!--In app strings-->
+    <string name="teamAName">· TEAM A ·</string>
+    <string name="teamBName">· TEAM B ·</string>
+    <string name="tryPointDescription">Try</string>
+    <string name="goalKickPointDescription">Goal Kick</string>
+    <string name="penaltyPointDescription">Penalty</string>
+    <string name="dropGoalDescription">Drop Goal</string>
+    <string name="logoContentDescription">Logo with rugby ball is displayed</string>
+    <string name="addScoreButtons">+</string>
+    <string name="resetButtonName">·    New Game   ·</string>
+    <string name="defaultScore">0</string>
 </resources>

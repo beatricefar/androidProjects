@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--app colours-->
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--layout colours-->
+    <color name="resetButton">#000000</color>
+    <color name="textColor">#000000</color>
+    <color name="buttonColor">#BF360C</color>
+    <color name="separatorColor">#BF360C</color>
+    <color name="buttonTextColor">#FFFFFF</color>
 </resources>
