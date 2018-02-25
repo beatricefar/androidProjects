@@ -3,109 +3,98 @@ package com.beatricefarias.rugbyscorecounter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreHome = 0;
-    int scoreVisitors = 0;
+    private int scoreTeamA = 0;
+    private int scoreTeamB = 0;
+    private TextView teamAScore;
+    private TextView teamBScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        displayForHome(scoreHome);
-        displayForVisitors(scoreVisitors);
+
+        teamAScore = (TextView) findViewById(R.id.teamAScore);
+        teamBScore = (TextView) findViewById(R.id.teamBScore);
+
+        ArrayList<Points> points = makeArrayList();
+
+        setListeners(points);
+        resetScore();
     }
 
     /**
-     * Add 4 points to final score to Home team.
+     * Method which creates array list containing buttonID, point count, team name
+     * @return points array list
      */
-    public void tryHome (View view){
-        scoreHome = scoreHome + 4;
-        displayForHome(scoreHome);
+    private ArrayList makeArrayList() {
+        ArrayList<Points> points = new ArrayList<>();
+        points.add(new Points(R.id.tryTeamA, 4, "teamA"));
+        points.add(new Points(R.id.tryTeamB, 4, "teamB"));
+        points.add(new Points(R.id.goalKickTeamA, 2, "teamA"));
+        points.add(new Points(R.id.goalKickTeamB, 2, "teamB"));
+        points.add(new Points(R.id.penaltyTeamA, 2, "teamA"));
+        points.add(new Points(R.id.penaltyTeamB, 2, "teamB"));
+        points.add(new Points(R.id.dropGoalTeamA, 1, "teamA"));
+        points.add(new Points(R.id.dropGoalTeamB, 1, "teamB"));
+
+        return points;
     }
 
     /**
-     * Add 2 points to final score to Home team.
+     * Method which sets listeners on appropriate buttons counting and updating scores of appropriate team
+     * @param points array list containing buttonID, point count and team name information
      */
-    public void goalKickHome (View view){
-        scoreHome = scoreHome + 2;
-        displayForHome(scoreHome);
+    private void setListeners(ArrayList<Points> points) {
+        for (int i = 0; i < points.size(); i++) {
+            Points currentElement = points.get(i);
+            int buttonId = currentElement.getButtonId();
+            final int totalPoints = currentElement.getPoints();
+            String teamName = currentElement.getTeam();
+
+            Button currentButton = (Button) findViewById(buttonId);
+
+            if (teamName == "teamA") {
+                currentButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        scoreTeamA = scoreTeamA + totalPoints;
+                        teamAScore.setText(String.valueOf(scoreTeamA));
+                    }
+                });
+            } else if (teamName == "teamB") {
+                currentButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        scoreTeamB = scoreTeamB + totalPoints;
+                        teamBScore.setText(String.valueOf(scoreTeamB));
+                    }
+                });
+            }
+        }
     }
 
     /**
-     * Add 2 points to final score to Home team.
+     * Method to reset scores of each team
      */
-    public void penaltyHome (View view){
-        scoreHome = scoreHome + 2;
-        displayForHome(scoreHome);
-    }
+    private void resetScore() {
+        Button resetButton = (Button) findViewById(R.id.resetButton);
 
-    /**
-     * Add 1 points to final score to Home team.
-     */
-    public void dropGoalHome (View view){
-        scoreHome = scoreHome + 1;
-        displayForHome(scoreHome);
-    }
-
-    /**
-     * Adds 4 points to final score to Visitors team.
-     */
-    public void tryVisitors (View view){
-        scoreVisitors = scoreVisitors + 4;
-        displayForVisitors(scoreVisitors);
-    }
-
-    /**
-     * Add 2 points to final score to Visitors team.
-     */
-    public void goalKickVisitors (View view){
-        scoreVisitors = scoreVisitors + 2;
-        displayForVisitors(scoreVisitors);
-    }
-
-    /**
-     * Add 2 points to final score to Visitors team.
-     */
-    public void penaltyVisitors (View view){
-        scoreVisitors = scoreVisitors + 2;
-        displayForVisitors(scoreVisitors);
-    }
-
-    /**
-     * Add 1 points to final score to Visitors team.
-     */
-    public void dropGoalVisitors (View view){
-        scoreVisitors = scoreVisitors + 1;
-        displayForVisitors(scoreVisitors);
-    }
-
-    /**
-     * Method resets current score count to 0.
-     */
-    public void reset (View view){
-        scoreHome = 0;
-        scoreVisitors = 0;
-        displayForHome(scoreHome);
-        displayForVisitors(scoreVisitors);
-    }
-
-    /**
-     * Displays the given score for Team A.
-     */
-    public void displayForHome(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.score_home);
-        scoreView.setText(String.valueOf(score));
-    }
-
-    /**
-     * Displays the given score for Team B.
-     */
-    public void displayForVisitors(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.score_visitors);
-        scoreView.setText(String.valueOf(score));
+        resetButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                scoreTeamA = 0;
+                teamAScore.setText("0");
+                scoreTeamB = 0;
+                teamBScore.setText("0");
+            }
+        });
     }
 }
 

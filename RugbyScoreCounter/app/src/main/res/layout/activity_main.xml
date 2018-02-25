@@ -26,13 +26,13 @@
 
             <!--Scores-->
             <TextView
-                android:id="@+id/score_home"
+                android:id="@+id/teamAScore"
                 style="@style/Score" />
 
             <android.support.v4.widget.Space style="@style/BlankSpace" />
 
             <TextView
-                android:id="@+id/score_visitors"
+                android:id="@+id/teamBScore"
                 style="@style/Score" />
 
             <TextView
@@ -48,55 +48,55 @@
             <!--Buttons and descriptions-->
             <!--Try row-->
             <Button
-                style="@style/LeftButton"
-                android:onClick="tryHome" />
+                android:id="@+id/tryTeamA"
+                style="@style/LeftButton" />
 
             <TextView
                 style="@style/PointInformation"
                 android:text="@string/tryPointDescription" />
 
             <Button
-                style="@style/RightButton"
-                android:onClick="tryVisitors" />
+                android:id="@+id/tryTeamB"
+                style="@style/RightButton" />
 
             <!--Goal Kick row-->
             <Button
-                style="@style/LeftButton"
-                android:onClick="goalKickHome" />
+                android:id="@+id/goalKickTeamA"
+                style="@style/LeftButton" />
 
             <TextView
                 style="@style/PointInformation"
                 android:text="@string/goalKickPointDescription" />
 
             <Button
-                style="@style/RightButton"
-                android:onClick="goalKickVisitors" />
+                android:id="@+id/goalKickTeamB"
+                style="@style/RightButton" />
 
             <!--Penalty row-->
             <Button
-                style="@style/LeftButton"
-                android:onClick="penaltyHome" />
+                android:id="@+id/penaltyTeamA"
+                style="@style/LeftButton" />
 
             <TextView
                 style="@style/PointInformation"
                 android:text="@string/penaltyPointDescription" />
 
             <Button
-                style="@style/RightButton"
-                android:onClick="penaltyVisitors" />
+                android:id="@+id/penaltyTeamB"
+                style="@style/RightButton" />
 
             <!--Drop Goal row-->
             <Button
-                style="@style/LeftButton"
-                android:onClick="dropGoalHome" />
+                android:id="@+id/dropGoalTeamA"
+                style="@style/LeftButton" />
 
             <TextView
                 style="@style/PointInformation"
                 android:text="@string/dropGoalDescription" />
 
             <Button
-                style="@style/RightButton"
-                android:onClick="dropGoalVisitors" />
+                android:id="@+id/dropGoalTeamB"
+                style="@style/RightButton" />
 
         </GridLayout>
 
@@ -106,8 +106,8 @@
             android:layout_height="match_parent">
 
             <Button
-                style="@style/ResetButton"
-                android:onClick="reset" />
+                android:id="@+id/resetButton"
+                style="@style/ResetButton" />
 
         </RelativeLayout>
 
