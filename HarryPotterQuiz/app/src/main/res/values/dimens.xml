@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Header Image-->
+    <dimen name="headerMargingTop">60dp</dimen>
+    <dimen name="headerMarginBottom">30dp</dimen>
+
+    <!--Quiz card-->
+    <dimen name="cardMarginTopBottom">16dp</dimen>
+    <dimen name="cardMarginStartEnd">26dp</dimen>
+    <dimen name="cardPadding">16dp</dimen>
+
+    <!--Description text-->
+    <dimen name="descriptionMarginTop">16dp</dimen>
+    <dimen name="descriptionMarginBottom">32dp</dimen>
+    <dimen name="descriptionMarginStartEnd">36dp</dimen>
+    <dimen name="descriptionTextSize">16sp</dimen>
+
+    <!--Question-->
+    <dimen name="questionMarginTop">20dp</dimen>
+    <dimen name="questionMarginBottom">10dp</dimen>
+    <dimen name="questionTextSize">16sp</dimen>
+
+    <!--Number Icon-->
+    <dimen name="numberLayout">40dp</dimen>
+    <dimen name="numberTextSize">20sp</dimen>
+
+    <!--Radio Button-->
+    <dimen name="radioTextSize">14sp</dimen>
+    <dimen name="radioPadding">10dp</dimen>
+
+    <!--Name Input-->
+    <dimen name="inputTextSize">14sp</dimen>
+
+    <!--Score Text View-->
+    <dimen name="scorePaddingTop">10dp</dimen>
+    <dimen name="scoreTextViewSize">20dp</dimen>
+
+    <!--Buttons-->
+    <dimen name="buttonWidth">0dp</dimen>
+
+    <!--Score Message-->
+    <dimen name="scoreMessageMargin">36dp</dimen>
+    <dimen name="scoreMessageSize">16sp</dimen>
+
+    <!--Score-->
+    <dimen name="scorePadding">10dp</dimen>
+    <dimen name="scoreTextSize">40sp</dimen>
+
+</resources>
