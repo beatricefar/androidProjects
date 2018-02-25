@@ -363,6 +363,7 @@
             android:padding="30dp">
 
             <Button
+                android:id="@+id/reset_score_button"
                 style="@style/Buttons"
                 android:layout_marginEnd="4dp"
                 android:background="@drawable/button_reset"

@@ -12,30 +12,30 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:layout_marginTop">60dp</item>
-        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:layout_marginTop">@dimen/headerMargingTop</item>
+        <item name="android:layout_marginBottom">@dimen/headerMarginBottom</item>
     </style>
 
     <style name="DescriptionText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">16dp</item>
-        <item name="android:layout_marginBottom">32dp</item>
-        <item name="android:layout_marginStart">36dp</item>
-        <item name="android:layout_marginEnd">36dp</item>
+        <item name="android:layout_marginTop">@dimen/descriptionMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/descriptionMarginBottom</item>
+        <item name="android:layout_marginStart">@dimen/descriptionMarginStartEnd</item>
+        <item name="android:layout_marginEnd">@dimen/descriptionMarginStartEnd</item>
         <item name="android:textColor">@color/introductionText</item>
         <item name="android:fontFamily">@font/open_sans_b</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/descriptionTextSize</item>
     </style>
 
     <style name="QuizCard">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">16dp</item>
-        <item name="android:layout_marginBottom">16dp</item>
-        <item name="android:layout_marginStart">26dp</item>
-        <item name="android:layout_marginEnd">26dp</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginTop">@dimen/cardMarginTopBottom</item>
+        <item name="android:layout_marginBottom">@dimen/cardMarginTopBottom</item>
+        <item name="android:layout_marginStart">@dimen/cardMarginStartEnd</item>
+        <item name="android:layout_marginEnd">@dimen/cardMarginStartEnd</item>
+        <item name="android:padding">@dimen/cardPadding</item>
         <item name="android:background">@drawable/bg_card</item>
     </style>
 
@@ -44,16 +44,16 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/life_savers_b</item>
         <item name="android:textColor">@color/cardText</item>
-        <item name="android:layout_marginTop">20dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">@dimen/questionMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/questionMarginBottom</item>
+        <item name="android:textSize">@dimen/questionTextSize</item>
     </style>
 
     <style name="NumberIcon">
-        <item name="android:layout_width">40dp</item>
-        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">@dimen/numberLayout</item>
+        <item name="android:layout_height">@dimen/numberLayout</item>
         <item name="android:background">@drawable/number_circle</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">@dimen/numberTextSize</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/bgCard</item>
         <item name="android:layout_centerHorizontal">true</item>
@@ -64,8 +64,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/open_sans_r</item>
         <item name="android:textColor">@color/cardText</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">@dimen/radioTextSize</item>
+        <item name="android:paddingLeft">@dimen/radioPadding</item>
     </style>
 
     <style name="NameInput">
@@ -74,7 +74,7 @@
         <item name="android:inputType">textShortMessage</item>
         <item name="android:fontFamily">@font/open_sans_r</item>
         <item name="android:textColor">@color/cardText</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/inputTextSize</item>
     </style>
 
     <style name="ScoreTextView">
@@ -82,14 +82,14 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/open_sans_b</item>
         <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingTop">@dimen/scorePaddingTop</item>
         <item name="android:textColor">@color/bgCard</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">@dimen/scoreTextViewSize</item>
 
     </style>
 
     <style name="Buttons">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/buttonWidth</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textAllCaps">false</item>
@@ -99,11 +99,11 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:layout_marginEnd">36dp</item>
-        <item name="android:layout_marginStart">36dp</item>
+        <item name="android:layout_marginEnd">@dimen/scoreMessageMargin</item>
+        <item name="android:layout_marginStart">@dimen/scoreMessageMargin</item>
         <item name="android:fontFamily">@font/open_sans_b</item>
         <item name="android:textColor">@color/bgCard</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/scoreMessageSize</item>
     </style>
 
     <style name="Score">
@@ -111,9 +111,9 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:fontFamily">@font/open_sans_r</item>
-        <item name="android:padding">10dp</item>
+        <item name="android:padding">@dimen/scorePadding</item>
         <item name="android:textColor">@color/score</item>
-        <item name="android:textSize">40sp</item>
+        <item name="android:textSize">@dimen/scoreTextSize</item>
     </style>
 
 </resources>
