@@ -342,6 +342,33 @@
 
         </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/QuizCard"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Question"
+                    android:text="@string/name_q_8" />
+
+                <EditText
+                    android:id="@+id/books_count_input"
+                    style="@style/NameInput"
+                    android:hint="@string/book_input_explanation" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/NumberIcon"
+                android:text="@string/quiz_q_no_8" />
+
+        </RelativeLayout>
+
+
+
         <TextView
             android:id="@+id/score_title_text_view"
             style="@style/ScoreTextView"

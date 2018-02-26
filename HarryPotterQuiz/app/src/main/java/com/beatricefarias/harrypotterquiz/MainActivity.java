@@ -13,12 +13,13 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int score = 0;
+    private int score;
     private String mWizardName;
     private EditText wizardNameInput;
     private TextView scoreView;
     private TextView scoreTitle;
     private TextView scoreMessageTextView;
+    private EditText booksCountInput;
 
     /**
      * An array of all radio button group ids in order
@@ -79,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         scoreMessageTextView.setVisibility(View.GONE);
 
         wizardNameInput = (EditText) findViewById(R.id.wizzard_name_input);
+        booksCountInput = (EditText) findViewById(R.id.books_count_input);
 
         showResult(showResultButton);
         resetScore();
@@ -86,9 +88,10 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Method which sets on click listener to showResultButton and calculates user score
+     *
      * @param showResultButton
      */
-    private void showResult(Button showResultButton){
+    private void showResult(Button showResultButton) {
         showResultButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -144,10 +147,12 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
 
+                checkBookInput();
+
                 // Set score text to appropriate text views
                 mWizardName = wizardNameInput.getText().toString();
-                scoreView.setText(score + "/7");
-                scoreMessageTextView.setText("Congratulations " + mWizardName + " you have got " + score + "/7 questions right!");
+                scoreView.setText(score + "/8");
+                scoreMessageTextView.setText("Congratulations " + mWizardName + " you have got " + score + "/8 questions right!");
 
                 // Make those text views visible
                 scoreTitle.setVisibility(View.VISIBLE);
@@ -162,7 +167,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void resetScore(){
+    /**
+     * Method to reset the score
+     */
+    private void resetScore() {
         Button resetScore = (Button) findViewById(R.id.reset_score_button);
         resetScore.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -173,5 +181,22 @@ public class MainActivity extends AppCompatActivity {
                 scoreMessageTextView.setVisibility(View.GONE);
             }
         });
+    }
+
+    /**
+     * Method to check if user input question is correct
+     */
+    private void checkBookInput() {
+        String userBooksInput = booksCountInput.getText().toString();
+        if (!userBooksInput.isEmpty()) {
+            if ((userBooksInput.equals("7")) || (userBooksInput.equals("seven"))
+                    || (userBooksInput.equals("Seven")) || (userBooksInput.equals("SEVEN"))) {
+                score += 1;
+            }
+        } else {
+            Toast incorrectAnswerToast = Toast.makeText(getApplicationContext(), "Question 8. Please do not leave books field empty.", Toast.LENGTH_SHORT);
+            incorrectAnswerToast.setGravity(Gravity.TOP, 0, 170);
+            incorrectAnswerToast.show();
+        }
     }
 }

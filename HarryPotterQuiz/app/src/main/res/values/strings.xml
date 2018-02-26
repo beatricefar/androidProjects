@@ -42,6 +42,10 @@
     <string name="quiz_q_7_b">Sirius Black</string>
     <string name="quiz_q_7_c">Severus Snape</string>
 
+    <string name="book_input_explanation">Enter a number of books (for ex. 1, 2…)</string>
+
+    <string name="name_q_8">How many Harry Potter books are published?</string>
+
     <string name="logo_view_description">This is the logo of quiz.</string>
 
     <string name="quiz_q_no_0">0</string>
@@ -52,10 +56,11 @@
     <string name="quiz_q_no_5">5</string>
     <string name="quiz_q_no_6">6</string>
     <string name="quiz_q_no_7">7</string>
+    <string name="quiz_q_no_8">8</string>
 
     <string name="your_score">Your score:</string>
-    <string name="default_score">0/7</string>
-    <string name="default_score_message">Congratulations Wizzard, you have got 7/7 questions right!</string>
+    <string name="default_score">0/8</string>
+    <string name="default_score_message">Congratulations Wizzard, you have got 8/8 questions right!</string>
 
     <string name="button_reset">Reset</string>
     <string name="button_show_results">Show Results</string>
