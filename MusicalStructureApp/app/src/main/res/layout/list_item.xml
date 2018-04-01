@@ -1,53 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="16dp" >
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ItemRootLayout">
 
     <ImageView
         android:id="@+id/album_cover"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/album_2" />
+        style="@style/ItemAlbumCover"
+        android:contentDescription="@string/album_cover_image_decription"
+        android:src="@drawable/album_awesome_wave" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/album_cover"
-        android:layout_marginStart="16dp"
-        android:orientation="vertical"
-        android:layout_centerVertical="true">
+    <LinearLayout style="@style/WrapContent.ItemInformationLayout">
 
         <TextView
             android:id="@+id/artist"
+            style="@style/WrapContent.ListItemText"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Artist: Pink Floyd"
-            android:textSize="16dp"
-            android:textColor="@android:color/black"/>
+            android:fontFamily="@font/work_sans"
+            android:text="@string/artist_2" />
 
         <TextView
             android:id="@+id/song"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Song: Blah blah"
-            android:textSize="16dp"
-            android:textColor="@android:color/black"/>
+            style="@style/WrapContent.ListItemText"
+            android:text="@string/song_2" />
 
         <TextView
             android:id="@+id/album"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Album: Blah blah"
-            android:textColor="@android:color/black"/>
+            style="@style/WrapContent.ListItemText"
+            android:text="@string/album_2" />
+
     </LinearLayout>
 
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/ic_play_arrow_black_24dp"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="16dp"/>
+        style="@style/PlayButtonIcon"
+        android:contentDescription="@string/list_item_play_button"
+        android:src="@drawable/ic_play_arrow_black_24dp" />
 
 </RelativeLayout>

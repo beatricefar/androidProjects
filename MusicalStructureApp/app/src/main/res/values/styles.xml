@@ -2,10 +2,109 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+    </style>
+
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Main Activity-->
+
+    <style name="MatchParent.MainActivity">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/appBackground</item>
+
+    </style>
+
+    <!--List Item-->
+
+    <style name="WrapContent.ListItemText">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/listItemText</item>
+        <item name="android:fontFamily">@font/work_sans</item>
+    </style>
+
+    <style name="ItemRootLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/rootLayoutPadding</item>
+    </style>
+
+    <style name="WrapContent.ItemInformationLayout">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">@dimen/itemInformationMargin</item>
+        <item name="android:layout_toEndOf">@id/album_cover</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ItemAlbumCover">
+        <item name="android:layout_width">@dimen/itemAlbumCover</item>
+        <item name="android:layout_height">@dimen/itemAlbumCover</item>
+    </style>
+
+    <style name="PlayButtonIcon">
+        <item name="android:layout_width">@dimen/playButton</item>
+        <item name="android:layout_height">@dimen/playButton</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">@dimen/itemInformationMargin</item>
+        <item name="android:tint">@color/colorAccent</item>
+    </style>
+
+    <!--Player Activity-->
+
+    <style name="PlayerAlbumCover">
+        <item name="android:layout_width">@dimen/playAlbumCover</item>
+        <item name="android:layout_height">@dimen/playAlbumCover</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/playAlbumCoverMarginTop</item>
+    </style>
+
+    <style name="PlayerButtonBase">
+        <item name="android:layout_width">@dimen/playerButtons</item>
+        <item name="android:layout_height">@dimen/playerButtons</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+    <style name="WrapContent.PlayerArtist">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/itemInformationMargin</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/listItemText</item>
+        <item name="android:fontFamily">@font/work_sans</item>
+    </style>
+
+    <style name="WrapContent.PlayerSong">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/playerSongMarginButton</item>
+        <item name="android:layout_marginTop">@dimen/itemInformationMargin</item>
+        <item name="android:textColor">@color/songTitleText</item>
+        <item name="android:textSize">@dimen/playerSongTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/work_sans</item>
+    </style>
+
+    <style name="MatchWrap.ButtonsLayout">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:paddingBottom">@dimen/buttonsPadding</item>
+        <item name="android:paddingTop">@dimen/buttonsPadding</item>
     </style>
 
 </resources>
