@@ -1,3 +1,44 @@
 <resources>
-    <string name="app_name">MusicalStructureApp</string>
+    <!--Application information-->
+
+    <string name="app_name">Musical Structure</string>
+
+    <!--Titles of Activities-->
+
+    <string name="main_activity_title">Playlist</string>
+    <string name="player_activity_title">Now Playing</string>
+
+    <!--Songs information-->
+
+    <string name="artist_1">Jimi Hendrix</string>
+    <string name="song_1">Hey Joe</string>
+    <string name="album_1">Are You Experienced</string>
+
+    <string name="artist_2">alt-j</string>
+    <string name="song_2">Taro</string>
+    <string name="album_2">An awesome wave</string>
+
+    <string name="artist_3">Red Hot Chili Peppers</string>
+    <string name="song_3">Californication</string>
+    <string name="album_3">Californication</string>
+
+    <string name="artist_4">Pink Floyd</string>
+    <string name="song_4">Time</string>
+    <string name="album_4">The Dark Side of the Moon</string>
+
+    <string name="artist_5">Pink Floyd</string>
+    <string name="song_5">Eclipse</string>
+    <string name="album_5">The Dark Side of the Moon</string>
+
+    <string name="artist_6">alt-j</string>
+    <string name="song_6">Matilda</string>
+    <string name="album_6">An awesome wave</string>
+
+    <!--Content Description-->
+    <string name="album_cover_image_decription">An image displaying album cover.</string>
+    <string name="list_item_play_button">An icon displaying play button.</string>
+    <string name="player_activity_play_button">An icon displaying play button.</string>
+    <string name="player_activity_skip_previous_button">An icon displaying skip previous button.</string>
+    <string name="player_activity_skip_next_button">An icon displaying skip next button.</string>
+
 </resources>

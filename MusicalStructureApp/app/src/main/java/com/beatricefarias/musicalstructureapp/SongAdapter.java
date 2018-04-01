@@ -1,8 +1,6 @@
 package com.beatricefarias.musicalstructureapp;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,11 +10,14 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by beatrice.farias on 29/03/2018.
- */
-
 public class SongAdapter extends ArrayAdapter<Song>{
+
+    /**
+     * Song adapter constructor which inflates views and sets values of each list item
+     * @param context gets context from activity
+     * @param songs an ArrayList object passed from activity
+     * Class returns a listView
+     */
 
     public SongAdapter(Context context, ArrayList<Song> songs) {
         super(context, 0, songs);
@@ -44,8 +45,6 @@ public class SongAdapter extends ArrayAdapter<Song>{
 
         ImageView albumCover = (ImageView) listItemView.findViewById(R.id.album_cover);
         albumCover.setImageResource(currentSong.getImageId());
-
-        Log.v("artist text view: ", currentSong.getArtistName());
 
         return listItemView;
     }

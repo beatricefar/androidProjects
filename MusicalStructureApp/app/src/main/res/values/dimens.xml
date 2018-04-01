@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rootLayoutPadding">16dp</dimen>
+    <dimen name="listItemText">16dp</dimen>
+    <dimen name="itemInformationMargin">16dp</dimen>
+    <dimen name="itemAlbumCover">120dp</dimen>
+    <dimen name="playButton">30dp</dimen>
+    <dimen name="playAlbumCover">300dp</dimen>
+    <dimen name="playAlbumCoverMarginTop">50dp</dimen>
+    <dimen name="playerButtons">70dp</dimen>
+    <dimen name="playerSongMarginButton">10dp</dimen>
+    <dimen name="playerSongTextSize">20sp</dimen>
+    <dimen name="buttonsPadding">10dp</dimen>
+</resources>

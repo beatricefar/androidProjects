@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchParent.MainActivity"
+    tools:context="com.beatricefarias.musicalstructureapp.PlayerActivity">
+
+    <RelativeLayout style="@style/MatchWrap">
+
+        <ImageView
+            android:id="@+id/album_cover"
+            style="@style/PlayerAlbumCover"
+            android:contentDescription="@string/album_cover_image_decription"
+            android:src="@drawable/album_awesome_wave" />
+
+        <TextView
+            android:id="@+id/artist"
+            style="@style/WrapContent.PlayerArtist"
+            android:layout_below="@+id/song"
+            android:text="@string/artist_2" />
+
+        <TextView
+            android:id="@+id/song"
+            style="@style/WrapContent.PlayerSong"
+            android:layout_below="@id/album_cover"
+            android:text="@string/song_2" />
+
+        <RelativeLayout
+            android:id="@+id/play_controls"
+            style="@style/MatchWrap.ButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_below="@id/artist">
+
+            <ImageButton
+                style="@style/PlayerButtonBase"
+                android:layout_toStartOf="@+id/play_button"
+                android:contentDescription="@string/player_activity_skip_previous_button"
+                android:src="@drawable/ic_skip_previous_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/play_button"
+                style="@style/PlayerButtonBase"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/player_activity_play_button"
+                android:src="@drawable/ic_play_arrow_black_24dp" />
+
+            <ImageButton
+                style="@style/PlayerButtonBase"
+                android:layout_toEndOf="@+id/play_button"
+                android:contentDescription="@string/player_activity_skip_next_button"
+                android:src="@drawable/ic_skip_next_black_24dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
